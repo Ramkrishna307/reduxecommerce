@@ -1,0 +1,25 @@
+@import "../../Common/colors.scss";
+
+
+.movie-wrapper{
+    margin: 0.75em;
+    background: $grey;
+
+}
+
+.movie-wrapper{
+    h2{
+        color: whitesmoke;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+}
+
+.movie-container{
+    display: flex;
+    justify-self:  center;
+    align-items:  center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
