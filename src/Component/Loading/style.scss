@@ -1,0 +1,193 @@
+$color__skeleton-1: #717579;
+$color__skeleton-2: #0d0f15dc;
+.panel{
+    margin-bottom: 16em;
+    margin-top: 16em;
+  display: flex;
+  justify-content:  center;
+  align-items:  center;
+}
+.skeleton {
+  *:empty {
+    background: $color__skeleton-1;
+    background-position: -500px 0;
+    animation: skeletonShine 1s linear 0s infinite normal forwards;
+    background-image: linear-gradient(135deg, $color__skeleton-1 0%, $color__skeleton-2 20%, $color__skeleton-1 40%, $color__skeleton-1 100%);
+    background-repeat: no-repeat;
+    background-size: 1000px 100%;
+
+    
+  }
+
+  &__section {
+    & + & {
+      margin-top: 16px;
+    }
+    &--table {}
+    &--actions {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    &--p {}
+    &--card {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    &--calendar {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    
+  }
+
+  &__header {
+    margin-bottom: 6px;
+    height: 32px;
+    width: 200px;
+    max-width: 35%;
+    &--long {
+      width: 300px;
+      max-width: 85%;
+    }
+  }
+  &__hr {
+    height: 2px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &__p {
+    height: 16px;
+    width: 100%;
+    margin-bottom: 8px;
+    &:last-child {
+      width: 45%;
+    }
+    &--short {
+      max-width: 120px;
+    }
+  }
+
+  &__button {
+    height: 24px;
+    width: 56px;
+    margin-bottom: 8px;
+    &:nth-child(2n) {
+      width: 72px;
+    }
+    &:nth-child(3n+1) {
+      width: 48px;
+    }
+  }
+  &__input {
+    height: 32px;
+    width: 100%;
+    margin-bottom: 8px;
+    &--half {
+      width: 50%;
+    }
+  }
+
+  &__tr {
+    display: flex;
+    gap: 12px;
+    &:first-child {
+      .skeleton__td {
+        height: 24px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  &__td {
+    flex: 1 1 100%;
+    height: 16px;
+    margin: 4px 0;
+    &:nth-child(2) {
+      flex-basis: 500%;
+    }
+    &:nth-child(3) {
+      flex-basis: 300%;
+    }
+    &:nth-child(4) {
+      flex-basis: 900%;
+    }
+    &:nth-child(5) {
+      flex-basis: 700%;
+    }
+  }
+
+  &__img {
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+  }
+  &__icon {
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+  }
+  &__block {
+    height: 56px;
+    width: 100%;
+    margin-bottom: 12px;
+    &--empty {
+      background: none !important;
+    }
+    &--xs {
+      height: 12px;
+    }
+    &--s {
+      height: 24px;
+    }
+    &--l {
+      height: 92px;
+    }
+    &--xl {
+      height: 128px;
+    }
+  }
+  &__group {
+    height: 24px;
+    width: 200px;
+    max-width: 35%;
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+
+  &__tree {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 16px;
+    * {
+      margin: 0;
+    }
+    .skeleton__p {
+      width: 100%;
+      max-width: none;
+    }
+    &--0 {
+      padding-left: 0;
+    }
+    &--1 {
+      padding-left: 16px;
+    }
+    &--2 {
+      padding-left: 24px;
+    }
+  }
+}
+
+@keyframes skeletonShine {
+  to {
+    background-position: 500px 0;
+  }
+}

@@ -1,6 +1,10 @@
 @import "../../Common/colors.scss"; // Import your color variables
 
 .movie-card {
+  // margin-left: 10px;
+  // margin-right: 10px;
+  min-height: 400px;
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   width: 250px; /* Adjust the width as needed */
