@@ -3,11 +3,12 @@
 .movie-card {
   // margin-left: 10px;
   // margin-right: 10px;
-  min-height: 400px;
-  max-height: 400px;
+  // min-height: 500px !important;
+  // max-height: 500px !important;
   display: flex;
   flex-direction: column;
   width: 250px; /* Adjust the width as needed */
+  height: 50vh;
   background-color: $grey; /* Use your preferred background color */
   border-radius: 8px;
   overflow: hidden;
