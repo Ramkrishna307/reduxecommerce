@@ -12,8 +12,8 @@ const Home = () => {
   const movies = useSelector(getAllMovies);
 
   useEffect(() => {
-    dispatch(fetchAsyncMovies())
-    dispatch(fetchAsyncSeries())
+    dispatch(fetchAsyncMovies('Harry'))
+    dispatch(fetchAsyncSeries('game'))
     
   }, [dispatch]);
 

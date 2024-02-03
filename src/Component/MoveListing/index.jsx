@@ -29,7 +29,7 @@ const MovieListing = () => {
       ))
     ) : (
       <div>
-        <h3>Error In MovieListing</h3>
+        <h3>Enter a valid input</h3>
       </div>
     );
 
@@ -40,7 +40,7 @@ const MovieListing = () => {
       ))
     ) : (
       <div>
-        <h3>Error In MovieListing</h3>
+        <h3>Enter a valid input</h3>
       </div>
     );
   return (

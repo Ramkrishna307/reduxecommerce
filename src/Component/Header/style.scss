@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    color: #0082A1;
 }
 .header{
     background-color: #1A1A18;
@@ -19,7 +20,7 @@
     color: $font-primary;
     font-size: 20px;
     font-weight:  600;
-
+    color: #0082A1;
 }
 
 .user-image,
@@ -30,3 +31,63 @@
 }
   
 
+
+
+.search-bar{
+    width: 50%;
+    display: flex;
+    justify-content:  center;
+    
+
+    form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        gap: 1em;
+        
+        input{
+            margin:10px 0;
+	padding:10px 7px;
+	width:80%;
+	outline:none;
+    color: whitesmoke;
+	border:1px solid #bbb;
+	border-radius:20px;
+	display:inline-block;
+    background-color: #bbb;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+    -webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        button{
+            color: aliceblue;
+            border-radius: 8rem;
+            margin:10px 0;
+	padding:10px 7px;
+	width:15%;
+	outline:none;
+	border:0.5px solid #bbb;
+	border-radius:20px;
+    font-weight: 400;
+    font-size: 1em;
+	display:inline-block;
+    background-color: #1f2937;
+    transition: all 0.3s;
+        }
+        button:hover{
+            color: white;
+            background-color: #1f456e;
+        }
+    }
+}
