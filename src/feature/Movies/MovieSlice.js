@@ -7,7 +7,7 @@ export const fetchAsyncMovies=createAsyncThunk('movies/fetchAsyncMovies', async 
   
     const apiKey = APIKEY;
     const movieText = name;
-    const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${movieText}&type=movie`;
+    const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&s=${movieText}&type=movie`;
 
     const response = await MovieApi.get(apiUrl);
     return response.data
@@ -18,7 +18,7 @@ export const fetchAsyncSeries=createAsyncThunk('movies/fetchAsyncSeries', async 
   
   const apiKey = APIKEY;
   const SeriesText = name;
-  const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${SeriesText}&type=series`;
+  const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&s=${SeriesText}&type=series`;
 
   const response = await MovieApi.get(apiUrl);
   return response.data
@@ -28,7 +28,7 @@ export const fetchAsyncMovieOrSeriesDetails=createAsyncThunk('movies/fetchAsyncM
   
   const apiKey = APIKEY;
   const SeriesText = 'game';
-  const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&i=${id}&Plot=full`;
+  const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&i=${id}&Plot=full`;
 
   const response = await MovieApi.get(apiUrl);
   return response.data
