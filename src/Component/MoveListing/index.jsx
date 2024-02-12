@@ -8,7 +8,7 @@ import Slider from "react-slick";
 const MovieListing = () => {
   const movies = useSelector(getAllMovies);
   const series = useSelector(getAllSeries);
-  console.log("Movies from selector", movies);
+//  console.log("Movies from selector", movies);
   let renderMovies = "";
   let renderSeries = "";
 

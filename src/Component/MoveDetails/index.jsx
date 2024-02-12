@@ -13,7 +13,7 @@ const MovieDetails = () => {
     const { imdbID } = useParams();
     const dispatch = useDispatch();
     const data = useSelector(getAllMovieDetailsOrSeries);
-    console.log("Movie Details", data);
+    //console.log("Movie Details", data);
 
     const {
         Title, Year, Rated, Released, Runtime, Actors, Awards, BoxOffice, Country,

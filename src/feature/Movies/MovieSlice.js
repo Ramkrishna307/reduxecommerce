@@ -50,23 +50,23 @@ const movieSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchAsyncMovies.pending, (state) => {
-        console.log('Pending');
+       // console.log('Pending');
       })
       .addCase(fetchAsyncMovies.fulfilled, (state, { payload }) => {
-        console.log('Fulfilled');
+        //console.log('Fulfilled');
         // You can handle the fulfilled action and update the state here
         return {...state,movies:payload};
       })
       .addCase(fetchAsyncMovies.rejected, (state) => {
-        console.log('Rejected');
+        //console.log('Rejected');
       })
       .addCase(fetchAsyncSeries.fulfilled, (state, { payload }) => {
-        console.log('Fulfilled');
+       // console.log('Fulfilled');
         // You can handle the fulfilled action and update the state here
         return {...state,series:payload};
       })
       .addCase(fetchAsyncMovieOrSeriesDetails.fulfilled, (state, { payload }) => {
-        console.log('Fulfilled');
+        //console.log('Fulfilled');
         // You can handle the fulfilled action and update the state here
         return {...state,seletedMovieOrSeries:payload};
       });

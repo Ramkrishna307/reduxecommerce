@@ -12,7 +12,7 @@ const Header = () => {
     const[name,setName]=useState("");
     const SubmitHandler=(e)=>{
         e.preventDefault();
-        console.log(name);
+        //console.log(name);
         dispatch(fetchAsyncMovies(name));
         dispatch(fetchAsyncSeries(name));
         setName("");
